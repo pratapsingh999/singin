@@ -25,15 +25,15 @@ function SignUp() {
     }
   return (
   <>
-  
+  <div className="page">
     <form className="form" onSubmit={submitForm} >
     <div className="container">
-    <h1 className="texts">Let's get started, Genius!</h1>
+    <h1 className="loginname">SIGN UP</h1>
       <div class="mb-3">
         <label className="name" for="name"  class="form-label">
          First name
         </label>
-        <input type="text" placeholder="First name" name="First name" required></input>
+        <input class="form-control"  type="text" placeholder="First name" name="First name" required></input>
         {/* <input
           type="name"
           placeholder=" First name"
@@ -54,7 +54,7 @@ function SignUp() {
           type=" last name"
           placeholder=" last name"
           autoComplete="off"
-        //   class="form-control"
+          class="form-control"
           id=" lastname"
           aria-describedby=" lastnameHelp"
         //   value={ Lastname}
@@ -69,7 +69,7 @@ function SignUp() {
           type="email"
           placeholder="Email address"
           autoComplete="off"
-        //   class="form-control"
+          class="form-control"
           id="exampleInputEmail1"
           aria-describedby="emailHelp"
         //   value={Phonenumber}
@@ -84,7 +84,7 @@ function SignUp() {
           type="number"
           placeholder=" Phone number"
           autoComplete="off"
-        //   class="form-control"
+          class="form-control"
           id=" Phone number"
           aria-describedby=" Phone numberHelp"
         //   value={Email}
@@ -99,17 +99,21 @@ function SignUp() {
           type="password"
           placeholder="Password"
           autoComplete="off"
-        //   class="form-control"
+          class="form-control"
           id="exampleInputPassword1"
         //   value={Password}
         //   onChange={(e) => setPassword(e.target.value)}
         />
       </div>
-      <button type="submit" class="btn btn-primary">
-        Register Now
-      </button>
-      <button  type="submit"  class="btn btn-primary"><Link to='/form'>Sign in </Link></button>
+      <button type="submit" class="btn btn-primary btn_custmise">
+        Register 
+      </button><br/>
+      
+      <div className="alr">
+      <span >Already have an account?  <Link className="link" to='/form'>Login</Link></span>
       </div>
+      </div>
+      
     </form>
 
     {/* <button onClick={() => navTopage('/from')}>Go to about pages</button> */}
@@ -130,7 +134,7 @@ function SignUp() {
             })   
         }
     </div>
-  
+    </div>
     
   </>
   )

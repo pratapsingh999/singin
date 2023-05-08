@@ -1,50 +1,33 @@
-/* .texts{
-    text-align: center;
-   padding-top: 10vh;
-   padding-bottom: 10vh;
-   background-color: aqua;
-}
-.container{
-    padding-top: 10vh;
-    text-align: center; 
-    background-color: aqua;
-}
-.name{
-    padding-left: 100vh;
-} */
 .form {
-    width: 40%;
-    margin: 30vh auto;
-    background-color: aqua;
-    text-align: center;
+    width: 35%;
+    margin: 8vh auto;
+    background-color: rgb(235, 237, 237);
+    box-shadow: gray 5px 15x 3px 2px;
+    border-radius: 20px;
+    /* text-align: center; */
+  }
+  .form1{
+    margin: 200px; 
+   margin-left: 65vh;
+    width: 35%;
+    /* margin: 8vh auto; */
+    background-color: rgb(235, 237, 237);
+    box-shadow: gray 5px 15x 3px 2px;
+    border-radius: 30px;
+    /* text-align: center; */
+  }
+  .loginname{
+       text-align: center;
+       padding-top: 5%;
+     
+  }
+   .btn_custmise{
+    margin-left: 37%;
+    padding: 5px 30px 5px 30px;
+  } 
+  .alr{
+   text-align: center;
+  }
 
-  }
-  .button{
-padding: 10vh;
-  }
   
- .input {
-    /* In order to define widths */
-    display: inline-block;
-    text-align: left;
-  }
-  
-  .label {
-    width: 30%;
-    /* Positions the label text beside the input */
-    text-align: right;
-  }
-  
-  .label+input {
-    width: 30%;
-    /* Large margin-right to force the next element to the new-line
-             and margin-left to create a gutter between the label and input */
-    margin: 0 30% 0 4%;
-  }
-  
-  
-  /* Only the submit button is matched by this selector,
-         but to be sure you could use an id or class for that button */
-  
-  .input+input {
-    float: right;}
+ 
