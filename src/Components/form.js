@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Link } from 'react-router-dom';
+
 
 function Form() {
   const [Email, setEmail] = useState("");
@@ -17,6 +19,7 @@ function Form() {
 <>
 <div className="color">
     <form className="form" onSubmit={submitForm}>
+    <div className="container">
       <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">
           Email address
@@ -25,7 +28,7 @@ function Form() {
           type="email"
           placeholder="Email address"
           autoComplete="off"
-          class="form-control"
+          // class="form-control"
           id="exampleInputEmail1"
           aria-describedby="emailHelp"
           value={Email}
@@ -40,7 +43,7 @@ function Form() {
           type="password"
           placeholder="Password"
           autoComplete="off"
-          class="form-control"
+          // class="form-control"
           id="exampleInputPassword1"
           value={Password}
           onChange={(e) => setPassword(e.target.value)}
@@ -49,7 +52,11 @@ function Form() {
       <button type="submit" class="btn btn-primary">
         login
       </button>
+      <button  type="submit" class="btn btn-primary"><Link to='/' >Register Now</Link></button>
+      </div>
     </form>
+
+
 
     <div>
         {
@@ -69,6 +76,3 @@ function Form() {
 }
 
 export default Form;
-
-
-  
