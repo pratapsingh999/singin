@@ -126,7 +126,7 @@ function SignUp() {
             <div className="alr">
               <span>
                 Already have an account?{" "}
-                <Link className="link" to="/form">
+                <Link className="link" to="/signin">
                   Login
                 </Link>
               </span>

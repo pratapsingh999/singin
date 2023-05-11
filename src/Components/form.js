@@ -54,7 +54,7 @@ function Form() {
         login
       </button>
       <div className="alr">
-      <span >Not a member?  <Link className="link" to='/'>Sign Up</Link></span>
+      <span >Not a member?  <Link className="link" to='/signup'>Sign Up</Link></span>
       </div>
       </div>
     </form>
